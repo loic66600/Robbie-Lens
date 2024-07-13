@@ -12,7 +12,7 @@ Intégrer des formulaires de contact basiques
 
 🚀 Visualisation du site
 Le site peut être visualisé de deux manières :
-En visitant directement le lien GitHub Pages : https://karenbouissa.github.io/Robbie-Lens-Photographie/
+En visitant directement le lien GitHub Pages :  https://loic66600.github.io/Robbie-Lens/
 En clonant le repository et en ouvrant le fichier index.html dans un navigateur web
 
 📂 Structure du projet
