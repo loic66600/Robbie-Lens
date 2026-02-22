@@ -3,17 +3,27 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photographe professionnelle en Île-de-France : portraits, événements, corporate et retouches. Découvrez le portfolio de Robbie Lens et réservez votre séance.">
+    <meta name="theme-color" content="#1f2039">
+    <meta property="og:title" content="Robbie Lens Photographie">
+    <meta property="og:description" content="Portraits, événements et contenus de marque réalisés par une photographe professionnelle.">
+    <meta property="og:type" content="website">
     <title>Accueil - Robbie Lens  Photographie</title>
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu principal</a>
     <header>
         <nav>
-            <img src="images/logo.png" alt="Logo Robbie Lens">
+            <a href="index.html" class="lien-icone">
+                <img src="images/logo.png" alt="Logo Robbie Lens">
+            </a>
             <div>
                 <a href="index.html">Accueil</a>
                 <a href="a-propos.html">À propos</a>
@@ -22,55 +32,104 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="accueil-introduction">
+    <main id="contenu">
+        <section class="accueil-introduction reveal">
             <div>
                 <h1><strong>Robbie Lens Photographie</strong></h1>
                 <p>
-                    Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis
-                    plus de 5 ans maintenant, j’exerce mon métier avec la passion
-                    qui m’anime : capturer l’essence de chaque instant.
+                    Là où <em>professionnalisme</em> s’allie à la <em>passion</em>. Depuis
+                    plus de 5 ans, j’accompagne particuliers et entreprises pour
+                    créer des images fortes, authentiques et prêtes à être publiées.
                 </p>
 
-                <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+                <div class="hero-actions">
+                    <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+                    <a href="portfolio.html" class="cta cta-secondaire">Voir le portfolio</a>
+                </div>
 
             </div>
-            <img src="images/robbie-lens.png" alt="Portrait avec effet de la photographe Robbie Lens">
+            <img src="images/robbie-lens.png" alt="Portrait avec effet de la photographe Robbie Lens" fetchpriority="high" decoding="async">
         </section>
-        <section class="accueil-photos">
+        <section class="section-dark reveal">
+            <h2>Prestations photo professionnelles</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Portrait professionnel</h3>
+                    <p>Portraits individuels, équipe, trombinoscope corporate et personal branding.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Reportage événementiel</h3>
+                    <p>Conférences, lancements, soirées d’entreprise et événements privés.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Contenu pour marques</h3>
+                    <p>Visuels produits, lifestyle et banque d’images pour réseaux et site web.</p>
+                </article>
+            </div>
+        </section>
+        <section class="accueil-photos reveal">
             <h2>Mon dernier projet</h2>
             <div>
-                <img src="images/accueil/element-1.png" alt="Twelve apostles - Australie">
-                <img src="images/accueil/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande">
-                <img src="images/accueil/element-3.png" alt="Parc National d’Abel Tasman - Nouvelle-Zélande">
+                <img src="images/accueil/element-1.png" alt="Twelve apostles - Australie" loading="lazy" decoding="async">
+                <img src="images/accueil/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande" loading="lazy" decoding="async">
+                <img src="images/accueil/element-3.png" alt="Parc National d’Abel Tasman - Nouvelle-Zélande" loading="lazy" decoding="async">
             </div>
             <div>
-                <img src="images/accueil/element-4.png" alt="Lac Rotorua - Nouvelle-Zélande">
-                <img src="images/accueil/element-5.png" alt="Milford Sound - Nouvelle-Zélande">
-                <img src="images/accueil/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande">
+                <img src="images/accueil/element-4.png" alt="Lac Rotorua - Nouvelle-Zélande" loading="lazy" decoding="async">
+                <img src="images/accueil/element-5.png" alt="Milford Sound - Nouvelle-Zélande" loading="lazy" decoding="async">
+                <img src="images/accueil/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande" loading="lazy" decoding="async">
             </div>
         </section>
-        <section id="contact" class="section-contact">
+        <section class="section-dark process-section reveal">
+            <h2>Comment se déroule une prestation</h2>
+            <ol class="process-list">
+                <li><strong>Brief</strong> : échange sur vos besoins, style, délais et livrables.</li>
+                <li><strong>Préparation</strong> : repérage, moodboard et plan de shooting.</li>
+                <li><strong>Prise de vue</strong> : séance cadrée, direction et fluidité sur place.</li>
+                <li><strong>Post-production</strong> : sélection, retouches et livraison en galerie.</li>
+            </ol>
+        </section>
+        <section class="section-light testimonials reveal">
+            <h2>Ils m’ont fait confiance</h2>
+            <div class="testimonials-grid">
+                <blockquote>
+                    « Un rendu haut de gamme et un accompagnement très pro du brief à la livraison. »
+                    <cite>— Studio Vela</cite>
+                </blockquote>
+                <blockquote>
+                    « Robbie a su capter l’ambiance de notre événement sans perturber l’organisation. »
+                    <cite>— Maison Rivage</cite>
+                </blockquote>
+                <blockquote>
+                    « Notre équipe est ravie des portraits : naturels, élégants et cohérents. »
+                    <cite>— Cabinet Néo Conseil</cite>
+                </blockquote>
+            </div>
+        </section>
+        <section id="contact" class="section-contact reveal">
             <h2>Parlons de votre projet</h2>
             <form method="get" action="">
                 <div class="form-nom-email">
                     <div class="form-column">
                         <label for="nom">Quel est votre nom?</label>
-                        <input type="text" name="nom" id="nom">
+                        <input type="text" name="nom" id="nom" required>
                     </div>
                     <div class="form-column">
                         <label for="email">Votre email</label>
-                        <input type="text" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                 </div>
-                <label for="Message">Message</label>
-                <textarea name="Message" id="Message" rows="10"></textarea>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="10" required></textarea>
                 <input type="submit" value="Envoyer" class="cta">
             </form>
+            <p class="contact-infos">Email : contact@robbielens.fr • Téléphone : +33 6 12 34 56 78</p>
         </section>
     </main>
     <footer>
-        <img src="images/logo.png" alt="Logo Robbie Lens">
+        <a href="index.html" class="lien-icone">
+            <img src="images/logo.png" alt="Logo Robbie Lens">
+        </a>
         <div>
             <a target="_blank" href="https://twitter.com/" class="lien-icone">
                 <img src="images/twitter.png" alt="Logo Twitter">
@@ -79,6 +138,7 @@
                 <img src="images/instagram.png" alt="Logo Instagram">
             </a>
         </div>
+        <p class="footer-copy">© <span id="current-year"></span> Robbie Lens Photographie</p>
     </footer>
 </body>
 

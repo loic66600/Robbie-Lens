@@ -1,18 +1,29 @@
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <title>À propos - Robbie Lens Photographie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarifs photo professionnels : shooting, retouches, reportages et prestations studio pour entreprises et particuliers.">
+    <meta name="theme-color" content="#1f2039">
+    <meta property="og:title" content="Tarifs - Robbie Lens Photographie">
+    <meta property="og:description" content="Des offres photo claires, adaptées aux entreprises et aux particuliers.">
+    <meta property="og:type" content="website">
+    <title>Tarifs - Robbie Lens Photographie</title>
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu principal</a>
     <header>
         <nav>
-            <img src="images/logo.png" alt="Logo Robbie Lens">
+            <a href="index.html" class="lien-icone">
+                <img src="images/logo.png" alt="Logo Robbie Lens">
+            </a>
             <div>
                 <a href="index.html">Accueil</a>
                 <a href="a-propos.html">À propos</a>
@@ -23,17 +34,18 @@
     </header>
 
 
-    <main class="a-propos-main">
+    <main id="contenu" class="a-propos-main">
 
         <h1>Tarifs</h1>
-        <div class="conteneurtarif">
+        <p class="intro-tarifs">Des offres claires, adaptables à vos besoins et à votre niveau d’usage.</p>
+        <div class="conteneurtarif reveal">
 
             <div class="carre-contenu-tarifs">
 
                 <h2 class="tarif">Shooting photo</h2>
 
                 <p>
-                    Pour capturer vos moments les plus précieux et garder un souvenir impérissable. je me déplace en
+                    Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
                     Île-de-France pour réaliser vos photos
                 </p>
 
@@ -59,7 +71,7 @@
 
                 <p>
                     Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album
-                    photo personalisé </p>
+                    photo personnalisé </p>
 
                 <h3>400€ album A4</h3>
 
@@ -67,7 +79,7 @@
             </div>
 
         </div>
-        <section class="section-tarifs">
+        <section class="section-tarifs reveal">
 
             <table>
                 <caption>Studio pro</caption>
@@ -92,9 +104,22 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <section class="section-dark garanties reveal">
+            <h2>Ce qui est inclus</h2>
+            <ul class="garanties-list">
+                <li>Préparation du brief et recommandations créatives</li>
+                <li>Tri et sélection des meilleures images</li>
+                <li>Retouche professionnelle colorimétrique</li>
+                <li>Livraison en galerie privée HD + formats web</li>
+            </ul>
+            <a href="index.html#contact" class="cta">DEMANDER UN DEVIS</a>
+        </section>
     </main>
     <footer>
-        <img src="images/logo.png" alt="Logo Robbie Lens">
+        <a href="index.html" class="lien-icone">
+            <img src="images/logo.png" alt="Logo Robbie Lens">
+        </a>
         <div>
             <a target="_blank" href="https://twitter.com/" class="lien-icone">
                 <img src="images/twitter.png" alt="Logo Twitter">
@@ -103,6 +128,7 @@
                 <img src="images/instagram.png" alt="Logo Instagram">
             </a>
         </div>
+        <p class="footer-copy">© <span id="current-year"></span> Robbie Lens Photographie</p>
     </footer>
 
 </body>

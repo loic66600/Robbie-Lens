@@ -3,14 +3,22 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez le parcours, la méthode et les engagements de Robbie Lens, photographe professionnelle pour entreprises et particuliers.">
+    <meta name="theme-color" content="#1f2039">
+    <meta property="og:title" content="À propos - Robbie Lens Photographie">
+    <meta property="og:description" content="Parcours, méthode et engagements d'une photographe professionnelle.">
+    <meta property="og:type" content="website">
     <title>À propos - Robbie Lens Photographie</title>
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu principal</a>
     <header>
         <nav>
             <a href="index.html" class="lien-icone">
@@ -26,7 +34,7 @@
         </nav>
     </header>
 
-    <div class="content">
+    <div class="content reveal">
         <div class="gallery-wrapper">
             <div class="gallery">
                 <div class="photo"></div>
@@ -44,28 +52,57 @@
         </div>
     </div>
 
-    <main class="a-propos-main">
+    <main id="contenu" class="a-propos-main">
 
         <h1>À propos</h1>
-        <div class="carre-contenu">
+        <div class="carre-contenu reveal">
             <p>
-                Photographe depuis plus de 5 ans, je réalise des reportages aux photos dynamiques et pertinentes
-                pour
-                vos
-                projets de communication. Créativité, qualité, et sérénité pour vous! Je gère tout, depuis la
-                direction
-                artistique, la réalisation du reportage jusqu’à la livraison de vos photos retouchées, prêtes à
-                l’emploi.
+                Photographe depuis plus de 5 ans, je crée des images dynamiques et pertinentes pour les projets
+                de communication, les événements et les portraits professionnels. Mon approche combine direction
+                artistique, sens du détail et accompagnement humain pour des visuels efficaces et durables.
             </p>
             <br>
             <p>Services</p>
             <ul>
                 <li>Portrait seul ou à plusieurs</li>
-                <li>Shooting mode</li>
+                <li>Shooting mode et branding</li>
+                <li>Reportage événementiel</li>
                 <li>Retouches sur mesure</li>
-                <li>Développement</li>
+                <li>Livraison web et impression</li>
             </ul>
         </div>
+        <section class="section-dark valeurs-section reveal">
+            <h2>Mes engagements</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Écoute & stratégie</h3>
+                    <p>Chaque projet démarre par un cadrage précis pour produire des images utiles à vos objectifs.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Qualité constante</h3>
+                    <p>Couleurs, retouches et livraison harmonisées pour une identité visuelle cohérente.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Respect des délais</h3>
+                    <p>Planning clair et suivi de production pour une collaboration sereine de A à Z.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section-light faq-section reveal">
+            <h2>Questions fréquentes</h2>
+            <details>
+                <summary>Intervenez-vous hors Île-de-France ?</summary>
+                <p>Oui, je me déplace partout en France et à l’étranger selon le projet.</p>
+            </details>
+            <details>
+                <summary>Quels sont vos délais de livraison ?</summary>
+                <p>Un premier aperçu est livré sous 72h, puis la galerie finale selon le volume d’images.</p>
+            </details>
+            <details>
+                <summary>Proposez-vous des cessions de droits ?</summary>
+                <p>Oui, chaque devis précise les usages autorisés (web, presse, print, campagne).</p>
+            </details>
+        </section>
         <div>
             <a href="portfolio.html" class="cta2">VOIR MON PORTFOLIO</a>
         </div>
@@ -84,6 +121,7 @@
                 <img src="images/instagram.png" alt="Logo Instagram">
             </a>
         </div>
+        <p class="footer-copy">© <span id="current-year"></span> Robbie Lens Photographie</p>
     </footer>
 </body>
 
